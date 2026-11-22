@@ -1,0 +1,40 @@
+<Window x:Class="ClassManager.App.AlarmWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="上课提醒" WindowStyle="None" ResizeMode="NoResize" ShowInTaskbar="False"
+        Topmost="True" Background="#0B1220" Cursor="Hand" FontFamily="Microsoft YaHei UI"
+        WindowStartupLocation="Manual" UseLayoutRounding="True">
+    <Grid x:Name="RootGrid" MouseDown="RootGrid_MouseDown">
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#1B2B55" Offset="0" />
+                <GradientStop Color="#0B1220" Offset="1" />
+            </RadialGradientBrush>
+        </Grid.Background>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="36,0">
+            <Border Background="#FFD24D" CornerRadius="10" Padding="18,5" HorizontalAlignment="Center"
+                    Margin="0,0,0,20">
+                <TextBlock Text="上 课 铃 声" FontSize="24" FontWeight="Bold" Foreground="#1A1A1A" />
+            </Border>
+
+            <TextBlock Text="上课时间到了，" FontSize="76" FontWeight="Bold" Foreground="#FFFFFF"
+                       HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap" />
+            <TextBlock Text="请快速回到位置，做好上课准备，" FontSize="42" FontWeight="Bold"
+                       Foreground="#DCE6FA" HorizontalAlignment="Center" TextAlignment="Center"
+                       TextWrapping="Wrap" Margin="0,10" />
+            <TextBlock FontSize="66" FontWeight="Bold" Foreground="#FFD24D"
+                       HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap">
+                这节课是：<Run x:Name="SubjectRun" />
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,26">
+            <TextBlock x:Name="HintText" HorizontalAlignment="Center" FontSize="19" Foreground="#9FB0CC"
+                       TextAlignment="Center" TextWrapping="Wrap"
+                       Text="铃声结束后自动关闭（15 秒）　｜　点击屏幕可提前关闭（3 秒倒计时）　｜　紧急关闭：Ctrl + Alt + Shift + Q" />
+            <TextBlock x:Name="CountdownText" HorizontalAlignment="Center" FontSize="23" FontWeight="Bold"
+                       Foreground="#7FE0A0" Margin="0,8,0,0" />
+        </StackPanel>
+    </Grid>
+</Window>

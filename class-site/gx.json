@@ -1,0 +1,8 @@
+{
+  "version": "1.1.0",
+  "url": "https://github.com/newcyr/newcyr.github.io/releases/download/v1.1.0/ClassManagerSetup.exe",
+  "size": 61786286,
+  "sha256": "A4D6DA4AAD97F50269FFD963B3893B7B3A0178B6D85F028BFEA0D52B08FCAEF0",
+  "publishedAt": "2026-11-20",
+  "notes": "修复希沃账号填写区消失；增强希沃退出/登录并勾选隐私协议；新增手动检查更新（仅点击时执行）；课表拆分为周一至周日独立课表，提前 2 分钟提醒。"
+}

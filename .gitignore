@@ -1,0 +1,14 @@
+# 本地构建产物与私有配置
+bin/
+obj/
+build/publish/
+build/installtest/
+build/*.png
+build/*.log
+release/
+class-site/downloads/
+.screenshots/
+.trae-html-share-packages/
+config.local.json
+*.user
+.vs/
